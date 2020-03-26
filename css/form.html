@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+            display: block;
+            margin: 10px 0;
+        }
+
+        input[type=text], input[type=email], input[type=password], textarea, select,  {
+            width: 300px;
+            height: 20px;
+        }
+
+        select[multiple]{
+            height: 100px;
+        }
+
+        textarea{
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form method="GET">
+        <div>
+            <label for="username">User Name :</label>
+            <input type="text" name="username" id="username" placeholder="Enter your user name" required>
+        </div>
+        
+        <div>
+            <label for="useremail">Email :</label>
+            <input type="email" name="useremail" id="useremail" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+            <label for="userpass">Password :</label>
+            <input type="password" name="userpass" id="userpass" placeholder="Enter your password" required>
+        </div>
+
+        <div>
+            <label>Gender :</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </div>
+
+        <div>
+            <label>Programming Langue :</label>
+            <input type="checkbox" name="pl" value="python">Python
+            <input type="checkbox" name="pl" value="ruby">Ruby
+            <input type="checkbox" name="pl" value="r">R
+            <input type="checkbox" name="pl" value="php">PHP
+        </div>
+
+        <div>
+            <label for="age">Umur :</label>
+            <input type="number" name="age" id="age">
+        </div>
+
+        <div>
+            <label for="location">City :</label>
+            <select name="location" id="location">
+                <option value="">Select your location</option>
+                <option value="sby">Surabaya</option>
+                <option value="jkt">Jakarta</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="hobby">Hobby :</label>
+            <select name="hobby" id="hobby">
+                <option value="">Select your hobby</option>
+                <option value="soccer">soccer</option>
+                <option value="coddeing">Codding</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="comment">Comment :</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </div>
+
+        
+    </form>
+</body>
+</html>

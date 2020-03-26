@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        #container{
+            width: 800px;
+            padding: 20px;
+            overflow:auto;
+        }
+        #main{
+            width: 440px;
+            padding: 20px;
+            float: left;
+            border-right: solid 1px #cecece;
+        }
+
+        #side{
+            width: 260px;
+            padding: 20px;
+            float: left;
+        }
+
+        #footer{
+            clear: both;
+        }
+        #container{
+            width: 800px;
+            margin: auto;
+        }
+
+        #rounded{
+            background-color: hotpink;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 10px grey;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <h1>Lorem ipsum dolor, sit amet consec</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nam vitae accusamus? Quos ea aspernatur alias. Eum iusto eligendi doloribus aspernatur dicta sint, provident quam? Molestiae, voluptatum. Maiores, ad quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, deleniti! Quibusdam corrupti rem ratione facere incidunt? Aliquid molestias quisquam tempora, vero cupiditate accusantium? Consectetur dicta saepe ipsam incidunt, officiis tenetur!</p>
+        </div>
+    
+        <div id="side">
+            <ul>
+                <li><a href="#">orem ipsum dolor sit amet consectetur.</a></li>
+                <li><a href="#">Lorem ipsum, dolor sit amet consectetur.</a></li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            <h4>this is footer</h4>
+        </div>
+    </div>
+
+    <div id="rounded">
+    </div>
+    
+</body>
+</html>

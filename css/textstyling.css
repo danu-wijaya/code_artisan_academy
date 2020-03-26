@@ -1,0 +1,16 @@
+body{
+    background-color: thistle;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 300;
+}
+
+p{
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.4em;
+}
