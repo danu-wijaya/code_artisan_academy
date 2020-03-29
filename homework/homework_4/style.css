@@ -4,13 +4,13 @@
 }
 
 .head-line {
-    color: blue;
+    color:#3F3FFF;
     font-size: 15px;
     text-align: center;
 }
 
 .nav {
-    background-color:#ffffbf;
+    background-color:#FFFFBF;
     list-style: none;
     text-align: center;
     
@@ -45,7 +45,7 @@
 }
 
 .prev {
-    background-color: red;
+    background-color: #FF3F3F;
     color: white;
     text-align: center;
     margin-top: 40px;
@@ -87,7 +87,6 @@
 
 
 .footer-pics {
-    /* float: right; */
     text-align: right;
     padding-left: 250px;    
 }
