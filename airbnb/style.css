@@ -92,16 +92,54 @@ div#announcement{
     height: auto;
     border-radius: 8px;
 }
+#hosted-tag h1 {
+    font-size: 25px;
+}
 
 #container-hosted {
-    display: flex;
+    width: 95%;
+    display: flex;   
 }
 
 .hosted {
-    padding-left: 10px;
+    margin-left: 2px;
+    
 }
 
-.hosted img {
-    width: 270px;
-    border-radius: 20px;
+.hosted img{
+    max-width: 95%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hosted h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.hosted p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* ==== EXP-BOX ====*/
+#exp-vetted {
+    display: flex;
+    margin-top: 100px;
+}
+#exp-tagline {
+    margin-right: 50px;
+}
+.exp-box {
+    width: 16%;
+    margin-left: 50px;    
+}
+.exp-box img{
+    width: 18%;
+    text-align: left;
+}
+
+.exp-box p {
+    font-size: 16px;
 }

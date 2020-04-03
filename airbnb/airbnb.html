@@ -4,7 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirBnB</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 90%;
+            color: #333333;
+        }
+        h1, h5{
+            margin:10px;
+        }
+        h1{
+            font-size: 300%;
+            font-weight: 600;
+        }
+        a:link, a:visited{
+            color:#333333;
+            text-decoration: none;
+        }
+        div#container-header{
+            border-bottom: solid 1px #e4e4e4;
+        }
+        div#header{
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+        div#logo{
+            width:5%;
+        }
+        div#logo img{
+            max-width: 40%;
+        }
+        div#search{
+            width:25%;
+        }
+        div#search input[type="text"]{
+            width: 400px;
+            padding: 8px 10px;
+            font-size: 18px;
+            box-shadow: 2px 2px 10px #cecece;
+            border:none;
+            border-radius: 4px;
+        }
+        div#top-nav{
+            width:70%;
+            text-align: right;
+            font-weight: 500;
+        }
+        div#top-nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        div#top-nav li{
+            display: inline;
+            margin-left: 24px;
+            padding-bottom: 30px;
+
+        }
+        div#top-nav li:hover{
+            border-bottom: solid 2px #333333;
+        }
+
+        div#container-content{
+            padding: 40px 60px;
+        }
+
+        div#slogan{
+            width: 600px;
+            
+        }
+        div#announcement{
+            border:solid 1px #e4e4e4;
+            border-radius: 8px;
+            border-left: solid 8px orange;
+            padding: 20px;
+        }
+
+        .box-margin-bottom{
+            margin-bottom: 40px;
+        }
+        #category{
+            display: flex;
+        }
+        .category-box{
+            width: 80%;
+            margin-right: 10px;
+            border-radius: 8px;
+        }
+        .category-box img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        #hosted-tag h1 {
+            font-size: 25px;
+        }
+
+        #container-hosted {
+            width: 95%;
+            display: flex;   
+        }
+
+        .hosted {
+            margin-left: 2px;
+            
+        }
+
+        .hosted img{
+            max-width: 95%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .hosted h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: -10px;
+        }
+
+        .hosted p {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* ==== EXP-BOX ====*/
+        #exp-vetted {
+            display: flex;
+            margin-top: 100px;
+        }
+        #exp-tagline {
+            margin-right: 50px;
+            padding-top: 30px;
+        }
+        .exp-box {
+            width: 16%;
+            margin-left: 50px;    
+        }
+        .exp-box img{
+            width: 18%;
+            text-align: left;
+        }
+
+        .exp-box p {
+            font-size: 16px;
+        }
+
+    </style>
 </head>
 <body>
     <div id="container-header">
@@ -41,7 +189,7 @@
             </p>
         </div>
 
-        <div id="category" class="box-margin-bottom">
+        <div id="category" class="box-margin-bottom">            
             <div class="category-box">
                 <img src="https://a0.muscache.com/im/pictures/76352015-afc1-4b86-aab6-f6c84d5c729e.jpg?aki_policy=x_large">
                 <p>1000+ Experiences</p>
@@ -62,49 +210,53 @@
             </div>
         </div>
 
+        <div id="hosted-tag">
+            <h1>Meet host around the world</h1>
+        </div>
 
         <div id="container-hosted" class="box-margin-bottom">
             <div class="hosted">
                 <img src="https://a0.muscache.com/im/pictures/0b9e1f25-086d-4dcc-953f-0f0c26ce9187.jpg" alt="">
-                <h2>Music History and culture <br>
-                Tour with a DJ</h2>
+                <h2>Music History and culture Tour with a DJ</h2>
                 <p>Havana, Cuba</p>
-            </div>
-    
+            </div>    
             <div class="hosted">
                 <img src="https://a0.muscache.com/im/pictures/a522c9d4-80f9-499b-bb5a-a352b9152b6d.jpg" alt="">
-                <h2>Mole cooking class with an <br>
-                Indigenous cook</h2>
+                <h2>Mole cooking class with an Indigenous cook</h2>
                 <p>Mexico City, Mexico</p>
-            </div>
-    
+            </div>    
             <div class="hosted">
                 <img src="https://a0.muscache.com/im/pictures/054731cf-40b7-4a5d-ae3a-70add71354e4.jpg" alt="">
-                <h2>Golden desert adventure <br>
-                with a local guide</h2>
+                <h2>Golden desert adventure with a local guide</h2>
                 <p>Muscat, oman</p>
-            </div>
-    
+            </div>    
             <div class="hosted">
                 <img src="https://a0.muscache.com/im/pictures/add8b628-d4fd-4d9f-9752-6c9d867e4dbd.jpg" alt="">
-                <h2>Horse whispering with an <br>
-                equine theraphist</h2>
+                <h2>Horse whispering with an equine theraphist</h2>
                 <p>Barcelona, spain</p>
             </div>    
         </div>
 
+        <div id="exp-vetted">
+            <div id="exp-tagline">
+                <h2>Airbnb Experiences are vetted for quality</h2>
+            </div>
+            <div class="exp-box">
+                <img src="https://a0.muscache.com/pictures/55ede8e9-21cc-4302-918a-1343f70e04f0.jpg" alt="">
+                <h3>Local Expert</h3>
+                <p>Led by locals who love where they’re from and what they do.</p>
+            </div>
+            <div class="exp-box">
+                <img src="https://a0.muscache.com/pictures/6ca44422-9ab4-42d0-94a1-73fff922164e.jpg" alt="">
+                <h3>Small group</h3>
+                <p>With intimate group sizes, you’ll never get lost in the crowd.</p>
+            </div>
+            <div class="exp-box">
+                <img src="https://a0.muscache.com/pictures/4a9dfa0e-7aa9-4ef8-891d-d8ecf229700c.jpg" alt="">
+                <h3>High standards</h3>
+                <p>Every experience is reviewed for unique access.</p>
+            </div>            
+        </div>
     </div>
-
-    
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
