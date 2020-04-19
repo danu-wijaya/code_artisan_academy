@@ -21,3 +21,4 @@ last_name = 'doe'
 print(f'hello {greeting} {first_name} {last_name}, how are you')
 
 # hello john, your name has 4 letter
+print("hello {name}, your name has {total} letter".format(name=first_name, total=len(first_name)))
