@@ -14,10 +14,28 @@ class Mahasiswa:
         self.tanggal_lahir = tanggal_lahir
         self.terdaftar = terdaftar
 
+    # fungsi untuk mereprentasikan object string
+    def __str__(self):
+        return self.nama_depan + " " + self.nama_belakang
+    
+    def register(self):
+        if self.terdaftar:
+            print("sudah terdaftar")
+        self.terdaftar = True
+        print("pendaftaran berhasil")
 
 budi = Mahasiswa(nama_depan="Budi", nama_belakang="Anwar", jurusan="Politik", terdaftar=False, tanggal_lahir="1999-02-14")
 
+danu = Mahasiswa(nama_depan="danu", nama_belakang="wijaya", jurusan="informatika", terdaftar=True, tanggal_lahir="1986-10-01")
+
+print(budi)
+print(danu)
+
+print(budi.terdaftar)
+budi.register()
+
 print(budi.nama_depan)
+
 
 if budi.terdaftar:
     print("yes")
